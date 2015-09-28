@@ -29,6 +29,9 @@
  *  Website: http://vle.newbury-college.ac.uk
  */
  
+  v2.9.2
+ - fixed img max-width issue that affected Gradebook in Chrome
+ 
  v2.9.1
  - updated a few oranges and yellows to make them less "murky"
  - fixed logo width to allow for wider logos
