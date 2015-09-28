@@ -28,9 +28,13 @@ a:hover, a:focus {
 	outline: none;
 }
 
-img {
+/* img {
 	max-width:100%;
 	height:auto;
+} */
+
+.img-responsive {
+	margin:0 !important;
 }
 
 #page-site-index h2.headingblock:before {
@@ -315,9 +319,9 @@ margin-left:10px;
 right:-5px;
 }
 
-a.icon.menu-action {
+/*a.icon.menu-action {
 height:24px;
-}
+}*/
 
 .jsenabled .usermenu .moodle-actionmenu>.menu .filler {
 display:none;
@@ -381,11 +385,11 @@ h1#courseheader {
 	margin-bottom:20px;
 }
 
-img.iconsmall {
+/*img.iconsmall {
 	height:16px;
 	width:16px;
 	
-	}
+	}*/
 
 .course-content {
     background-color: #FFFFFF;
