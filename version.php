@@ -25,7 +25,7 @@
 defined('MOODLE_INTERNAL') || die;
 
 $plugin->component = 'theme_aardvark'; // Full name of the plugin (used for diagnostics)
-$plugin->release   = '2.9.1';
+$plugin->release   = '2.9.2';
 $plugin->version   = 2015092400; // The current module version (Date: YYYYMMDDXX)
 $plugin->requires  = 2015041700; // Requires this Moodle version
 $plugin->dependencies = array('theme_bootstrapbase'  => 2013050100,);
