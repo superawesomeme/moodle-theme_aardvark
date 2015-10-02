@@ -29,11 +29,15 @@
  *  Website: http://vle.newbury-college.ac.uk
  */
  
+<<<<<<< HEAD
  v2.9.3
  - fixed actionmenu hover colour
  - increased z-index on PDF Editor
  
  v2.9.2
+=======
+  v2.9.2
+>>>>>>> origin/master
  - fixed img max-width issue that affected Gradebook in Chrome
  
  v2.9.1
