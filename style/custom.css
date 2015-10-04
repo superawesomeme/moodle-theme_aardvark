@@ -28,9 +28,13 @@ a:hover, a:focus {
 	outline: none;
 }
 
-img {
+/* img {
 	max-width:100%;
 	height:auto;
+} */
+
+.img-responsive {
+	margin:0 !important;
 }
 
 #page-site-index h2.headingblock:before {
@@ -315,9 +319,9 @@ margin-left:10px;
 right:-5px;
 }
 
-a.icon.menu-action {
+/*a.icon.menu-action {
 height:24px;
-}
+}*/
 
 .jsenabled .usermenu .moodle-actionmenu>.menu .filler {
 display:none;
@@ -372,6 +376,14 @@ display:none;
     background-color: transparent;
 }
 
+.moodle-actionmenu.show[data-enhanced] .menu a:hover {
+    color:[[setting:maincolor]];
+}
+
+.moodle-actionmenu.show[data-enhanced] .menu {
+	box-shadow:1px 1px 10px rgba(0, 0, 0, 0.1);
+}
+
 .breadcrumb {
 	background-color: transparent;
 	padding-left:0;
@@ -381,11 +393,11 @@ h1#courseheader {
 	margin-bottom:20px;
 }
 
-img.iconsmall {
+/*img.iconsmall {
 	height:16px;
 	width:16px;
 	
-	}
+	}*/
 
 .course-content {
     background-color: #FFFFFF;
@@ -1305,3 +1317,7 @@ fieldset[disabled] .btn-link:focus {
   margin: 0 1px;
   font-size: 16px;
   }
+  
+  .moodle-dialogue-base .moodle-dialogue-wrap {
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
