@@ -29,17 +29,27 @@
  *  Website: http://vle.newbury-college.ac.uk
  */
  
+<<<<<<< HEAD
  v2.9.5
  - removed the z-index fix that turned out to be less of a fix and more or a nightmare
 
  v2.9.4
  - increased z-index even more because 5000 was too low for the activity chooser
  
+=======
+<<<<<<< HEAD
+>>>>>>> origin/master
  v2.9.3
  - fixed actionmenu hover colour
  - increased z-index on PDF Editor
  
  v2.9.2
+<<<<<<< HEAD
+=======
+=======
+  v2.9.2
+>>>>>>> origin/master
+>>>>>>> origin/master
  - fixed img max-width issue that affected Gradebook in Chrome
  
  v2.9.1
