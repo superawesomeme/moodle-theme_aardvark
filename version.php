@@ -25,18 +25,8 @@
 defined('MOODLE_INTERNAL') || die;
 
 $plugin->component = 'theme_aardvark'; // Full name of the plugin (used for diagnostics)
-<<<<<<< HEAD
 $plugin->release   = '2.9.5';
 $plugin->version   = 2015100400; // The current module version (Date: YYYYMMDDXX)
-=======
-<<<<<<< HEAD
-$plugin->release   = '2.9.3';
-$plugin->version   = 2015100200; // The current module version (Date: YYYYMMDDXX)
-=======
-$plugin->release   = '2.9.2';
-$plugin->version   = 2015092400; // The current module version (Date: YYYYMMDDXX)
->>>>>>> origin/master
->>>>>>> origin/master
 $plugin->requires  = 2015041700; // Requires this Moodle version
 $plugin->dependencies = array('theme_bootstrapbase'  => 2013050100,);
 $plugin->maturity  = MATURITY_STABLE;

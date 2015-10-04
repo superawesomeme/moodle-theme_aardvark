@@ -1317,13 +1317,6 @@ fieldset[disabled] .btn-link:focus {
   margin: 0 1px;
   font-size: 16px;
   }
-<<<<<<< HEAD
-=======
-
-  .moodle-dialogue-base .moodle-dialogue {
-  z-index:5000 !important;
-  }
->>>>>>> origin/master
   
   .moodle-dialogue-base .moodle-dialogue-wrap {
     box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.2);
