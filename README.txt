@@ -28,6 +28,9 @@
  *  Twitter: http://twitter.com/newburycollege
  *  Website: http://vle.newbury-college.ac.uk
  */
+
+ v2.9.6
+ - Convert fixed path to dynamic path for img.defaultuserpic url. Fixes broken default user image links; when Moodle is mounted in a sub-directory. [Timothy OBrien]
  
  v2.9.5
  - removed the z-index fix that turned out to be less of a fix and more or a nightmare
