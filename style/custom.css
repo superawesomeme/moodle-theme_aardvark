@@ -305,7 +305,7 @@ font-size:1.2em;
 
 
 img.defaultuserpic {
-content:url("/user/pix.php?file=/164/f1.jpg");
+content:url("[[pix:u/f1]]");
 border: 1px solid #fff;
 margin:0
 }
