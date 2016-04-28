@@ -1321,3 +1321,7 @@ fieldset[disabled] .btn-link:focus {
   .moodle-dialogue-base .moodle-dialogue-wrap {
     box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.2);
 }
+
+.assignfeedback_editpdf_widget {
+z-index:5000;
+}

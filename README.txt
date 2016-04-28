@@ -29,6 +29,9 @@
  *  Website: http://vle.newbury-college.ac.uk
  */
 
+ v2.9.7
+  - Removed <?php echo $html->navbarclass ?> from header.php (not required) [Mary Evans]
+ 
  v2.9.6
  - Convert fixed path to dynamic path for img.defaultuserpic url. Fixes broken default user image links; when Moodle is mounted in a sub-directory. [Timothy OBrien]
  

@@ -253,6 +253,15 @@
     color:#fff;
 }
 
+.block_poll .header .title h2:before {
+    content:"\f080";
+}
+
+.block_poll .header .title h2{
+    background-color: #ffcc00;
+    color:#fff;
+}
+
 .block_flickr .header .title h2:before {
     content:"\f03e";
 }
@@ -299,6 +308,8 @@
     background-color: #34495E;
     color:#fff;
 }
+
+
 
 .footer-icon {
     background-color: #7f8c8d;
