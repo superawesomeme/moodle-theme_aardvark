@@ -20,12 +20,12 @@
 }
 
 .block_news_items .header .title h2:before {
-	content:"\f0a1";
+    content:"\f0a1";
 }
 
 .block_news_items .header .title h2 {
-	background-color: #1ABC9C;
-	color:#fff;
+    background-color: #1ABC9C;
+    color:#fff;
 }
 
 .block_navigation .header .title h2:before {
@@ -33,68 +33,68 @@
 }
 
 .block_navigation .header .title h2 {
-	background-color: #7F8C8D;
-	color:#fff;
+    background-color: #7F8C8D;
+    color:#fff;
 }
 
 .block_calendar_upcoming .header .title h2:before,
 .block_calendar_month .header .title h2:before {
-	content:"\f073";
+    content:"\f073";
 }
 
 .block_calendar_upcoming .header .title h2,
 .block_calendar_month .header .title h2{
     background-color: #3498DB;
-	color:#fff;
+    color:#fff;
 }
 
 .block_course_list .header .title h2:before {
-	content:"\f108";
+    content:"\f108";
 }
 
 .block_course_list .header .title h2 {
     background-color: #ffcc00;
-	color:#fff;
+    color:#fff;
 }
 
 .block_completionstatus .header .title h2:before,
 .block_selfcompletion .header .title h2:before {
-	content:"\f0e4";
+    content:"\f0e4";
 }
 
 .block_completionstatus .header .title h2,
 .block_selfcompletion .header .title h2{
     background-color: #2ECC71;
-	color:#fff;
+    color:#fff;
 }
 
 .block_rss_client .header .title h2:before,
 .block_rss_plus .header .title h2:before  {
-	content:"\f09e";
+    content:"\f09e";
 }
 
 .block_rss_client .header .title h2,
 .block_rss_plus .header .title h2 {
     background-color: #f98012;
-	color:#fff;
+    color:#fff;
 }
 
 .block_blog_menu .header .title h2:before {
-	content:"\f02d";
+    content:"\f02d";
 }
 
 .block_blog_menu .header .title h2 {
     background-color: #F39C12;
-	color:#fff;
+    color:#fff;
 }
 
 .block_quiz_results .header .title h2:before {
-	content:"\f080";
+    content:"\f080";
 }
 
 .block_quiz_results .header .title h2 {
-    background-color: #2ECC71;    
-	color:#fff;
+    background-color: #2ECC71;
+    color:#fff;
 }
 
 .block_quiz_navblock .header .title h2:before {
@@ -149,7 +149,7 @@
 .block_settings .header .title h2:before,
 .block_admin_bookmarks .header .title h2:before{
     content:"\f085";
-	color:#2C3E50;
+    color:#2C3E50;
 }
 
 .block_blog_tags .header .title h2:before,
@@ -205,7 +205,7 @@
 
 .block_login .header .title h2{
     background-color: #7F8C8D;
-	color:#fff;
+    color:#fff;
 }
 
 .block_recent_activity .header .title h2:before {
@@ -298,12 +298,12 @@
     color:#fff;
 }
 
-.block_lrc .header .title h2:before, 
+.block_lrc .header .title h2:before,
 .block_heritage .header .title h2:before  {
     content:"\f02d";
 }
 
-.block_lrc .header .title h2, 
+.block_lrc .header .title h2,
 .block_heritage .header .title h2  {
     background-color: #34495E;
     color:#fff;
@@ -324,11 +324,11 @@
     margin: 0 0.2em 0.4em;
     text-align: center;
     width: 1.8em;
-	text-shadow: none;
+    text-shadow: none;
 }
 
 .footer-icon:hover, .footer-icon:focus {
-	background-color:#fff;
+    background-color:#fff;
 }
 
 .footer-icon.website:hover, .footer-icon.website:focus {
@@ -366,5 +366,5 @@
 }
 
 .footer-icon.wikipedia:hover, .footer-icon.wikipedia:focus {
-	color: #747474;
+    color: #747474;
 }
