@@ -1,4 +1,90 @@
+/*
+ * @author    Shaun Daubney
+ * @package   theme_aardvark
+ * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
 /* Custom CSS Settings
 -------------------------*/
-[[setting:customcss]]
 
+.navbar .brand {
+    background-image: url([[pix:theme|logo]]);
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding: 0.7em;
+}
+.navbar .shortname {
+    margin-left: 2em;
+}
+
+/* Background settings
+-------------------------*/
+button,
+input.form-submit,
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+#notice .singlebutton + .singlebutton input,
+.submit.buttons input[name="cancel"] {
+    background:[[setting:maincolor]];
+}
+input.form-submit,
+input#id_submitbutton,
+input#id_submitbutton2,
+.path-admin .buttons input[type="submit"],
+td.submit input {
+    background: [[setting:maincolor]];
+}
+.navbar .btn-navbar .icon-bar {
+    background-color: [[setting:maincolor]];
+}
+.navbar .nav > li > a:hover,
+.navbar .nav > li > a:focus,
+.navbar .nav li.dropdown.open > .dropdown-toggle,
+.navbar .nav li.dropdown.active > .dropdown-toggle,
+.navbar .nav li.dropdown.open.active > .dropdown-toggle {
+    background-color:[[setting:maincolor]];
+}
+.navbar .nav li.dropdown.open > .dropdown-toggle,
+.navbar .nav li.dropdown.active > .dropdown-toggle,
+.navbar .nav li.dropdown.open.active > .dropdown-toggle {
+    background-color:[[setting:maincolor]];
+}
+.dropdown-menu {
+    background-color: [[setting:maincolor]];
+}
+
+/* Border setting
+-------------------------*/
+.dropdown-submenu:hover > a::after {
+    border-right-color: [[setting:maincolor]];
+}
+
+/* Color setting
+-------------------------*/
+a:hover, a:focus {
+    color: [[setting:maincolor]];
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-submenu:hover > a,
+.dropdown-submenu:focus > a {
+    color:[[setting:maincolor]];
+}
+.usermenu .login a {
+    color: [[setting:maincolor]];
+}
+.jsenabled .usermenu .moodle-actionmenu.show .menu a:hover {
+    color:[[setting:maincolor]];
+}
+.moodle-actionmenu.show[data-enhanced] .menu a:hover {
+    color:[[setting:maincolor]];
+}
+.iconsmall svg {
+    fill: #AD0D00;
+}
+
+/* No CSS markup below this point.
+---------------------------------*/
+
+[[setting:customcss]]
