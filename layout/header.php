@@ -44,16 +44,10 @@ $hascustommenu = (empty($PAGE->layout_options['nocustommenu']) && !empty($custom
 
 ?>
 
-<<<<<<< Updated upstream
-<header role="banner" class="navbar navbar-fixed-top">
-<nav role="navigation" class="navbar-inner">
-    <div class="container-fluid" >
-=======
 <header role="banner" class="navbar navbar-fixed-top<?php echo $html->navbarclass ?> moodle-has-zindex">
 <nav role="navigation" class="navbar-inner">
     <div class="container-fluid" >
 	
->>>>>>> Stashed changes
         <a class="brand" href="<?php echo $CFG->wwwroot;?>"><?php
         if ($hasshortname) {
             echo '<span class="shortname">' . format_string($SITE->shortname, true, array('context' => context_course::instance(SITEID))). '</span>';
@@ -64,15 +58,6 @@ $hascustommenu = (empty($PAGE->layout_options['nocustommenu']) && !empty($custom
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </a>
-<<<<<<< Updated upstream
-        <?php echo $OUTPUT->user_menu(); ?>
-        <div class="nav-collapse collapse navbar-responsive-collapse"><?php
-            echo $OUTPUT->custom_menu(); ?>
-            <ul class="nav pull-right">
-                <li><?php echo $OUTPUT->page_heading_menu(); ?></li>
-            </ul>
-        </div>
-=======
 		
         <?php echo $OUTPUT->user_menu(); ?>
 		<?php echo $OUTPUT->search_box(); ?>
@@ -82,7 +67,6 @@ $hascustommenu = (empty($PAGE->layout_options['nocustommenu']) && !empty($custom
                     <li><?php echo $OUTPUT->page_heading_menu(); ?></li>
                 </ul>
             </div>
->>>>>>> Stashed changes
     </div>
 </nav>
 </header>

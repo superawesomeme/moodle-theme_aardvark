@@ -4,13 +4,6 @@
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-<<<<<<< Updated upstream:style/aardvark.css
-html,body {
-    background-color: #ECF0F1;
-    font-family: 'open sans',sans-serif;
-}
-=======
->>>>>>> Stashed changes:style/aardvark.css
 h1, h2, h3, h4, h5, h6 {
     font-weight:normal;
 }
@@ -124,27 +117,8 @@ a:hover, a:focus {
 }
 .btn-navbar .icon-bar + .icon-bar {
     margin-top: 4px;
-<<<<<<< Updated upstream:style/aardvark.css
 }
 
-.navbar .logo {
-    display: block;
-    float: left;
-    height:40px;
-}
-
-img.logo {
- padding:5px;
-}
-
-.navbar .brand {
-    font-weight: normal;
-    text-shadow: none;
-    margin: 0;
-    padding: 15px;
-=======
->>>>>>> Stashed changes:style/aardvark.css
-}
 .navbar .nav > li > a:hover, .navbar .nav > li > a:focus, .navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle {
     color: #fff;
     text-shadow: none;
@@ -1204,11 +1178,6 @@ outline: none;
     box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
-<<<<<<< Updated upstream:style/aardvark.css
-.assignfeedback_editpdf_widget {
-    z-index:5000;
-}
-=======
 .search-input-wrapper > div {
     float: left;
     margin: 15px 0 9px;
@@ -1219,4 +1188,3 @@ outline: none;
     margin: 0.25em 0 0;
 }
 
->>>>>>> Stashed changes:style/aardvark.css

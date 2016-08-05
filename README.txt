@@ -10,12 +10,6 @@
  *  The theme features a simple flat look with inspiration taken from Flat UI and
  *  Google's material design.
  *
-<<<<<<< Updated upstream
- *  The theme now features a simple flat look with inspiration taken from Flat UI
- *  and Google's material design.
- *
-=======
->>>>>>> Stashed changes
  *  ------------------------------------------------------------------------------
  *  More information and documentation can be
  *  found at https://moodle.org/plugins/view.php?plugin=theme_aardvark
@@ -33,9 +27,6 @@
  *  Website: http://vle.newbury-college.ac.uk
  */
 
-<<<<<<< Updated upstream
- v3.0
-=======
  v3.1
  -  (See changes from 3.0)
  -  Intergrated global search function
@@ -50,7 +41,6 @@
  -  Created new branch - AARDVARK_31_STABLE
  
  v3.0 (Unpublished - used as base for 3.1 - thanks to Mary Evans)
->>>>>>> Stashed changes
  -  Depreciated Logo URL.
  -  Added new setting for 'Brand Logo' filpicker.
  -  Transfered all individual settings CSS to style/setting.css.

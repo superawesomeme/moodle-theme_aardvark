@@ -48,11 +48,7 @@ function theme_aardvark_set_brandlogo($css, $brandlogo) {
     $tag = '[[setting:brandlogo]]';
     $replacement = $brandlogo;
     if (is_null($replacement)) {
-<<<<<<< Updated upstream
-        $replacement = '';
-=======
 		$replacement = '';
->>>>>>> Stashed changes
     }
 
     $css = str_replace($tag, $replacement, $css);
