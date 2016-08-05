@@ -26,6 +26,7 @@ $hasdisclaimer = (!empty($PAGE->theme->settings->disclaimer));
 $haswebsite = (!empty($PAGE->theme->settings->website));
 $hasfacebook = (!empty($PAGE->theme->settings->facebook));
 $hastwitter = (!empty($PAGE->theme->settings->twitter));
+$hassnapchat = (!empty($PAGE->theme->settings->snapchat));
 $hasgoogleplus = (!empty($PAGE->theme->settings->googleplus));
 $hasflickr = (!empty($PAGE->theme->settings->flickr));
 $haspinterest = (!empty($PAGE->theme->settings->pinterest));
@@ -74,7 +75,7 @@ $haswikipedia = (!empty($PAGE->theme->settings->wikipedia));
 				
 				<?php if ($hasyoutube) {?><a href="<?php echo $PAGE->theme->settings->youtube;?> "><span class="footer-icon youtube"><i class="fa fa-youtube"></i></span></a> <?php } else {}?>
 				
-				<?php if ($haswikipedia) {?><a href="<?php echo $PAGE->theme->settings->wikipedia;?> "><span class="footer-icon wikipedia"><img src="<?php echo $OUTPUT->pix_url('footer-icons/wikipedia', 'theme')?>" /></span></a> <?php } else {}?>
+				<?php if ($haswikipedia) {?><a href="<?php echo $PAGE->theme->settings->wikipedia;?> "><span class="footer-icon wikipedia"><i class="fa fa-wikipedia-w"></i></span></a> <?php } else {}?>
 
 				<?php if ($haspinterest) {?><a href="<?php echo $PAGE->theme->settings->pinterest;?> "><span class="footer-icon pinterest"><i class="fa fa-pinterest"></i></span></a> <?php } else {}?>
 
@@ -85,6 +86,8 @@ $haswikipedia = (!empty($PAGE->theme->settings->wikipedia));
 				<?php if ($hasflickr) {?><a href="<?php echo $PAGE->theme->settings->flickr;?> "><span class="footer-icon flickr"><i class="fa fa-flickr"></i></span></a> <?php } else {}?>
 				
 				<?php if ($hasgoogleplus) {?><a href="<?php echo $PAGE->theme->settings->googleplus;?> "><span class="footer-icon googleplus"><i class="fa fa-google-plus"></i></span></a> <?php } else {}?>
+				
+				<?php if ($hassnapchat) {?><a href="<?php echo $PAGE->theme->settings->snapchat;?> "><span class="footer-icon snapchat"><i class="fa fa-snapchat-ghost"></i></span></a> <?php } else {}?>
 				
 				<?php if ($hastwitter) {?><a href="<?php echo $PAGE->theme->settings->twitter;?> "><span class="footer-icon twitter"><i class="fa fa-twitter"></i></span></a> <?php } else {}?>
 				

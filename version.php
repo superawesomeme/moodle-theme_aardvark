@@ -27,6 +27,12 @@ defined('MOODLE_INTERNAL') || die;
 $plugin->component = 'theme_aardvark'; // Full name of the plugin (used for diagnostics)
 $plugin->dependencies = array('theme_bootstrapbase'  => 2015111600,);
 $plugin->maturity  = MATURITY_STABLE;
+<<<<<<< Updated upstream
 $plugin->release   = '3.0';
 $plugin->requires  = 2015111600; // Requires this Moodle version
 $plugin->version   = 2016052000; // The current module version (Date: YYYYMMDDXX)
+=======
+$plugin->release   = '3.1';
+$plugin->requires  = 2016052300; // Requires this Moodle version
+$plugin->version   = 2016080500; // The current module version (Date: YYYYMMDDXX)
+>>>>>>> Stashed changes

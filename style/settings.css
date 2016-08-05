@@ -4,6 +4,7 @@
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+<<<<<<< Updated upstream
 /* Custom CSS Settings
 -------------------------*/
 
@@ -12,11 +13,47 @@
     background-position: left center;
     background-repeat: no-repeat;
     padding: 0.7em;
+=======
+/* Colour setting
+-------------------------*/
+
+html,body {
+    background-color: #ECF0F1;
+    font-family: 'open sans',sans-serif;
+}
+
+a:hover, a:focus {
+    color: [[setting:maincolor]];
+}
+
+.jsenabled .usermenu .moodle-actionmenu.show .menu a:hover {
+    color:[[setting:maincolor]];
+}
+.moodle-actionmenu.show[data-enhanced] .menu a:hover {
+    color:[[setting:maincolor]];
+}
+
+
+/* Nav Bar CSS Settings
+-------------------------*/
+
+.navbar .brand {
+    background-image: url([[setting:brandlogo]]);
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 0.7em;
+	font-weight: normal;
+    text-shadow: none;
+    margin: 0;
+	min-width: 1em;
+	height:1em;
+>>>>>>> Stashed changes
 }
 .navbar .shortname {
     margin-left: 2em;
 }
 
+<<<<<<< Updated upstream
 /* Background settings
 -------------------------*/
 button,
@@ -35,6 +72,8 @@ input#id_submitbutton2,
 td.submit input {
     background: [[setting:maincolor]];
 }
+=======
+>>>>>>> Stashed changes
 .navbar .btn-navbar .icon-bar {
     background-color: [[setting:maincolor]];
 }
@@ -54,17 +93,23 @@ td.submit input {
     background-color: [[setting:maincolor]];
 }
 
+<<<<<<< Updated upstream
 /* Border setting
 -------------------------*/
+=======
+>>>>>>> Stashed changes
 .dropdown-submenu:hover > a::after {
     border-right-color: [[setting:maincolor]];
 }
 
+<<<<<<< Updated upstream
 /* Color setting
 -------------------------*/
 a:hover, a:focus {
     color: [[setting:maincolor]];
 }
+=======
+>>>>>>> Stashed changes
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus,
 .dropdown-submenu:hover > a,
@@ -74,6 +119,7 @@ a:hover, a:focus {
 .usermenu .login a {
     color: [[setting:maincolor]];
 }
+<<<<<<< Updated upstream
 .jsenabled .usermenu .moodle-actionmenu.show .menu a:hover {
     color:[[setting:maincolor]];
 }
@@ -84,6 +130,31 @@ a:hover, a:focus {
     fill: #AD0D00;
 }
 
+=======
+
+/* Form settings
+-------------------------*/
+button,
+input.form-submit,
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+#notice .singlebutton + .singlebutton input,
+.submit.buttons input[name="cancel"] {
+    background:[[setting:maincolor]];
+}
+input.form-submit,
+input#id_submitbutton,
+input#id_submitbutton2,
+.path-admin .buttons input[type="submit"],
+td.submit input {
+    background: [[setting:maincolor]];
+}
+
+
+
+
+>>>>>>> Stashed changes
 /* No CSS markup below this point.
 ---------------------------------*/
 
