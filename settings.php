@@ -121,6 +121,13 @@ if ($ADMIN->fulltree) {
     $setting = new admin_setting_heading($name, $heading, $information);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $settings->add($setting);
+<<<<<<< Updated upstream
+
+    // Website url setting.
+    $name = 'theme_aardvark/website';
+    $title = get_string('website','theme_aardvark');
+    $description = get_string('websitedesc', 'theme_aardvark');
+=======
 
     // Website url setting.
     $name = 'theme_aardvark/website';
@@ -140,6 +147,106 @@ if ($ADMIN->fulltree) {
     $setting->set_updatedcallback('theme_reset_all_caches');
     $settings->add($setting);
 
+    // Twitter url setting.
+    $name = 'theme_aardvark/twitter';
+    $title = get_string('twitter','theme_aardvark');
+    $description = get_string('twitterdesc', 'theme_aardvark');
+    $default = '';
+    $setting = new admin_setting_configtext($name, $title, $description, $default);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $settings->add($setting);
+
+    // Snapchat url setting.
+    $name = 'theme_aardvark/snapchat';
+    $title = get_string('snapchat','theme_aardvark');
+    $description = get_string('snapchatdesc', 'theme_aardvark');
+    $default = '';
+    $setting = new admin_setting_configtext($name, $title, $description, $default);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $settings->add($setting);	
+	
+    // Google+ url setting.
+    $name = 'theme_aardvark/googleplus';
+    $title = get_string('googleplus','theme_aardvark');
+    $description = get_string('googleplusdesc', 'theme_aardvark');
+    $default = '';
+    $setting = new admin_setting_configtext($name, $title, $description, $default);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $settings->add($setting);
+
+    // Flickr url setting.
+    $name = 'theme_aardvark/flickr';
+    $title = get_string('flickr','theme_aardvark');
+    $description = get_string('flickrdesc', 'theme_aardvark');
+>>>>>>> Stashed changes
+    $default = '';
+    $setting = new admin_setting_configtext($name, $title, $description, $default);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $settings->add($setting);
+
+<<<<<<< Updated upstream
+    // Facebook url setting.
+    $name = 'theme_aardvark/facebook';
+    $title = get_string('facebook','theme_aardvark');
+    $description = get_string('facebookdesc', 'theme_aardvark');
+=======
+    // Pinterest url setting.
+    $name = 'theme_aardvark/pinterest';
+    $title = get_string('pinterest','theme_aardvark');
+    $description = get_string('pinterestdesc', 'theme_aardvark');
+    $default = '';
+    $setting = new admin_setting_configtext($name, $title, $description, $default);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $settings->add($setting);
+
+    // Instagram url setting.
+    $name = 'theme_aardvark/instagram';
+    $title = get_string('instagram','theme_aardvark');
+    $description = get_string('instagramdesc', 'theme_aardvark');
+    $default = '';
+    $setting = new admin_setting_configtext($name, $title, $description, $default);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $settings->add($setting);
+
+    // LinkedIn url setting.
+    $name = 'theme_aardvark/linkedin';
+    $title = get_string('linkedin','theme_aardvark');
+    $description = get_string('linkedindesc', 'theme_aardvark');
+    $default = '';
+    $setting = new admin_setting_configtext($name, $title, $description, $default);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $settings->add($setting);
+
+    // Wikipedia url setting.
+    $name = 'theme_aardvark/wikipedia';
+    $title = get_string('wikipedia','theme_aardvark');
+    $description = get_string('wikipediadesc', 'theme_aardvark');
+    $default = '';
+    $setting = new admin_setting_configtext($name, $title, $description, $default);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $settings->add($setting);
+
+    // YouTube url setting.
+    $name = 'theme_aardvark/youtube';
+    $title = get_string('youtube','theme_aardvark');
+    $description = get_string('youtubedesc', 'theme_aardvark');
+    $default = '';
+    $setting = new admin_setting_configtext($name, $title, $description, $default);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $settings->add($setting);
+
+    // Apple url setting.
+    $name = 'theme_aardvark/apple';
+    $title = get_string('apple','theme_aardvark');
+    $description = get_string('appledesc', 'theme_aardvark');
+>>>>>>> Stashed changes
+    $default = '';
+    $setting = new admin_setting_configtext($name, $title, $description, $default);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $settings->add($setting);
+
+<<<<<<< Updated upstream
     // Twitter url setting.
     $name = 'theme_aardvark/twitter';
     $title = get_string('twitter','theme_aardvark');
@@ -222,6 +329,8 @@ if ($ADMIN->fulltree) {
     $setting->set_updatedcallback('theme_reset_all_caches');
     $settings->add($setting);
 
+=======
+>>>>>>> Stashed changes
     // Android url setting.
     $name = 'theme_aardvark/android';
     $title = get_string('android','theme_aardvark');

@@ -56,6 +56,13 @@ $string['footeroptdesc'] = 'Customise basic elements of the theme\'s footer.';
 $string['footeroptheading'] = 'Footer';
 $string['frontpageheading'] = 'Frontpage';
 $string['frontpageheadingdesc'] = 'Customise frontpage elements of the theme such as user alerts and date.';
+<<<<<<< Updated upstream
+
+$string['generalalert'] = 'General Alert';
+$string['generalalertdesc'] = 'This will display an alert on your frontpage to advise users of a particular event/situation.';
+$string['googleplus'] = 'Google+ URL';
+$string['googleplusdesc'] = 'Enter the URL of your Google+ profile. (i.e http://plus.google.com/107817105228930159735)';
+=======
 
 $string['generalalert'] = 'General Alert';
 $string['generalalertdesc'] = 'This will display an alert on your frontpage to advise users of a particular event/situation.';
@@ -63,11 +70,26 @@ $string['googleplus'] = 'Google+ URL';
 $string['googleplusdesc'] = 'Enter the URL of your Google+ profile. (i.e http://plus.google.com/107817105228930159735)';
 
 $string['instagram'] = 'Instagram URL';
-$string['instagramdesc'] = 'Enter the URL of your Instagram page (via web.stagram). (i.e http://web.stagram.com/n/mycollege/)';
+$string['instagramdesc'] = 'Enter the URL of your Instagram page (via web.stagram). (i.e https://www.instagram.com/mycollege/)';
 
 $string['linkedin'] = 'LinkedIn URL';
 $string['linkedindesc'] = 'Enter the URL of your LinkedIn profile. (i.e http://www.linkedin.com/company/mycollege)';
 
+$string['maincolor'] = 'Main colour';
+$string['maincolordesc'] = 'Change the main colour of the theme. This includes menu hover, url hover and buttons.';
+
+$string['pinterest'] = 'Pinterest URL';
+$string['pinterestdesc'] = 'Enter the URL of your Pinterest page. (i.e http://pinterest.com/mycollege)';
+$string['pluginname'] = 'Aardvark';
+>>>>>>> Stashed changes
+
+$string['region-side-post'] = 'Right';
+$string['region-side-pre'] = 'Left';
+
+$string['shortname'] = 'Short Name';
+$string['shortnamedesc'] = 'Display the site short name in the menu bar.';
+
+<<<<<<< Updated upstream
 $string['maincolor'] = 'Main colour';
 $string['maincolordesc'] = 'Change the main colour of the theme. This includes menu hover, url hover and buttons.';
 
@@ -88,6 +110,20 @@ $string['twitterdesc'] = 'Enter the URL of your Twitter feed. (i.e http://www.tw
 
 $string['website'] = 'Website URL';
 $string['websitedesc'] = 'Enter the URL of your main website. (i.e http://www.mycollege.ac.uk)';
+=======
+$string['socialiconsheading'] = 'Social Icons';
+$string['socialiconsheadingdesc'] = 'Customise social network icons.';
+
+$string['snapchat'] = 'Snapchat URL';
+$string['snapchatdesc'] = 'Enter the URL of your Snapchat profile. (i.e https://www.snapchat.com/add/mycollege)';
+
+$string['twitter'] = 'Twitter URL';
+$string['twitterdesc'] = 'Enter the URL of your Twitter feed. (i.e http://www.twitter.com/mycollege)';
+
+$string['website'] = 'Website URL';
+$string['websitedesc'] = 'Enter the URL of your main website. (i.e http://www.mycollege.ac.uk)';
+
+>>>>>>> Stashed changes
 $string['wikipedia'] = 'Wikipedia URL';
 $string['wikipediadesc'] = 'Enter the URL of your Wikipedia page. (i.e http://en.wikipedia.org/wiki/mycollege)';
 

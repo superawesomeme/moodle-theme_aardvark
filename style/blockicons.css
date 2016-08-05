@@ -340,6 +340,9 @@
 .footer-icon.twitter:hover, .footer-icon.twitter:focus {
     color: #00aced;
 }
+.footer-icon.snapchat:hover, .footer-icon.snapchat:focus {
+    color: #f1c40f;
+}
 .footer-icon.googleplus:hover, .footer-icon.googleplus:focus {
     color: #f42941;
 }

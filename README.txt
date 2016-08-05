@@ -1,16 +1,21 @@
 /*
  *  Aardvark
  *
- *  The original menubar based theme for Moodle rewritten for Moodle 2.9+ to draw
- *  its base from Bootstrap.
+ *  The original menubar based theme for Moodle based on Bootstrap.
  *
- *  Aardvark has evolved over the past 10 years as Moodle has integrated the
- *  features that have made Aardvark so popular into its core system, including
- *  custom menu and user menu.
+ *  Aardvark has evolved over the years as the Moodle core has integrated the many
+ *  of the features that have made Aardvark so popular, including custom menu and
+ *  user menu.
  *
+ *  The theme features a simple flat look with inspiration taken from Flat UI and
+ *  Google's material design.
+ *
+<<<<<<< Updated upstream
  *  The theme now features a simple flat look with inspiration taken from Flat UI
  *  and Google's material design.
  *
+=======
+>>>>>>> Stashed changes
  *  ------------------------------------------------------------------------------
  *  More information and documentation can be
  *  found at https://moodle.org/plugins/view.php?plugin=theme_aardvark
@@ -21,7 +26,6 @@
  *  - Font Awesome font is licensed under SIL OFL 1.1 - http://scripts.sil.org/OFL
  *  - Font Awesome CSS, LESS, and SASS files are licensed under MIT License -
  *    http://opensource.org/licenses/mit-license.html
- *  - Icons - http://www.fatcow.com/free-icons
  *
  *  Author - Shaun Daubney
  *  ------------------------------------------------------------------------------
@@ -29,7 +33,24 @@
  *  Website: http://vle.newbury-college.ac.uk
  */
 
+<<<<<<< Updated upstream
  v3.0
+=======
+ v3.1
+ -  (See changes from 3.0)
+ -  Intergrated global search function
+ -  Added new range of small 'M' logos in pix/logos
+ -  Added Snapchat option in footer
+ -  Replaced Wikipedia svg with Fontawesome icon in footer
+ -  Removed z-index for Assignment PDF editor from aardvark.css 
+ -  Updated Fontawesome to 4.6.3
+ -  Updated aardvark/lib.php
+ -  Updated aardvark/settings.php
+ -  Updated aardvark/version.php
+ -  Created new branch - AARDVARK_31_STABLE
+ 
+ v3.0 (Unpublished - used as base for 3.1 - thanks to Mary Evans)
+>>>>>>> Stashed changes
  -  Depreciated Logo URL.
  -  Added new setting for 'Brand Logo' filpicker.
  -  Transfered all individual settings CSS to style/setting.css.
