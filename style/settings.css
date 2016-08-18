@@ -29,7 +29,7 @@ a:hover, a:focus {
 
 .navbar .brand {
     background-image: url([[setting:brandlogo]]);
-    background-position: center center;
+    background-position: left center;
     background-repeat: no-repeat;
     padding: 0.7em;
 	font-weight: normal;
