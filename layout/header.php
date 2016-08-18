@@ -44,7 +44,7 @@ $hascustommenu = (empty($PAGE->layout_options['nocustommenu']) && !empty($custom
 
 ?>
 
-<header role="banner" class="navbar navbar-fixed-top<?php echo $html->navbarclass ?> moodle-has-zindex">
+<header role="banner" class="navbar navbar-fixed-top">
 <nav role="navigation" class="navbar-inner">
     <div class="container-fluid" >
 	

@@ -28,17 +28,18 @@
  */
 
  v3.1
- -  (See changes from 3.0)
- -  Intergrated global search function
- -  Added new range of small 'M' logos in pix/logos
- -  Added Snapchat option in footer
- -  Replaced Wikipedia svg with Fontawesome icon in footer
- -  Removed z-index for Assignment PDF editor from aardvark.css 
- -  Updated Fontawesome to 4.6.3
- -  Updated aardvark/lib.php
- -  Updated aardvark/settings.php
- -  Updated aardvark/version.php
- -  Created new branch - AARDVARK_31_STABLE
+ -  (2016081800) Fixed Undefined variable: html in aardvark/layout/header.php
+ -  (2016081800) Fixed alignment of logo in header
+ -  (2016080500) Integrated global search function
+ -  (2016080500) Added new range of small 'M' logos in pix/logos
+ -  (2016080500) Added Snapchat option in footer
+ -  (2016080500) Replaced Wikipedia svg with Fontawesome icon in footer
+ -  (2016080500) Removed z-index for Assignment PDF editor from aardvark.css 
+ -  (2016080500) Updated Fontawesome to 4.6.3
+ -  (2016080500) Updated aardvark/lib.php
+ -  (2016080500) Updated aardvark/settings.php
+ -  (2016080500) Updated aardvark/version.php
+ -  (2016080500) Created new branch - AARDVARK_31_STABLE
  
  v3.0 (Unpublished - used as base for 3.1 - thanks to Mary Evans)
  -  Depreciated Logo URL.
