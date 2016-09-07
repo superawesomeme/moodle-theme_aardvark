@@ -29,4 +29,4 @@ $plugin->dependencies = array('theme_bootstrapbase'  => 2015111600,);
 $plugin->maturity  = MATURITY_STABLE;
 $plugin->release   = '3.1';
 $plugin->requires  = 2016052300; // Requires this Moodle version
-$plugin->version   = 2016081800; // The current module version (Date: YYYYMMDDXX)
+$plugin->version   = 2016081900; // The current module version (Date: YYYYMMDDXX)

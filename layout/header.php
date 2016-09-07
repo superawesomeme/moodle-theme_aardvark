@@ -19,7 +19,6 @@
  * @package   theme_aardvark
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-
 global $CFG;
 
 $hasheading = ($PAGE->heading);
@@ -45,31 +44,32 @@ $hascustommenu = (empty($PAGE->layout_options['nocustommenu']) && !empty($custom
 ?>
 
 <header role="banner" class="navbar navbar-fixed-top">
-<nav role="navigation" class="navbar-inner">
-    <div class="container-fluid" >
-	
-        <a class="brand" href="<?php echo $CFG->wwwroot;?>"><?php
+    <nav role="navigation" class="navbar-inner">
+        <div class="container-fluid" >
+		
+		<a class="brand" href="<?php echo $CFG->wwwroot;?>"><?php
         if ($hasshortname) {
             echo '<span class="shortname">' . format_string($SITE->shortname, true, array('context' => context_course::instance(SITEID))). '</span>';
         } ?></a>
-
-        <a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </a>
 		
-        <?php echo $OUTPUT->user_menu(); ?>
-		<?php echo $OUTPUT->search_box(); ?>
-       <div class="nav-collapse collapse">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+			    <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+			
+            <?php echo $OUTPUT->user_menu(); ?>
+			<?php echo $OUTPUT->search_box(); ?>
+            <div class="nav-collapse collapse navbar-responsive-collapse">
                 <?php echo $OUTPUT->custom_menu(); ?>
                 <ul class="nav pull-right">
                     <li><?php echo $OUTPUT->page_heading_menu(); ?></li>
                 </ul>
             </div>
-    </div>
-</nav>
-</header>
+        </div>
+    </nav>
+ 
+	</header>
 
 <div class="container-fluid clearfix"><?php
 
@@ -81,7 +81,6 @@ if ($hasnavbar) { ?>
 if ($iscoursepage) { ?>
     <h1 id="courseheader"><?php echo $PAGE->heading ?></h1><?php
 }
-
 if (($isfrontpage) && ($hasgeneralalert)) { ?>
     <div id="page-header-generalalert"><?php
         echo $PAGE->theme->settings->generalalert; ?>
