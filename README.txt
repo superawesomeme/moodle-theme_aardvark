@@ -28,6 +28,7 @@
  */
 
  v3.1
+ -	(2016081900) Fixed mobile/responsive menu issue (hamburger)
  -  (2016081800) Fixed Undefined variable: html in aardvark/layout/header.php
  -  (2016081800) Fixed alignment of logo in header
  -  (2016080500) Integrated global search function
