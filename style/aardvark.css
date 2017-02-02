@@ -1,9 +1,11 @@
-/*
- * @author    Shaun Daubney
- * @package   theme_aardvark
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+/**
+ * @package		theme_aardvark
+ * @author		Shaun Daubney
+ * @license		http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+/* Body
+-------------------------*/
 h1, h2, h3, h4, h5, h6 {
     font-weight:normal;
 }
@@ -12,7 +14,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 a {
     color: #2C3E50;
-    text-decoration: none;
+    
 }
 a:hover, a:focus {
     text-decoration: none;
@@ -21,6 +23,47 @@ a:hover, a:focus {
 .img-responsive {
     margin:0 !important;
 }
+ 
+/* Logo
+-------------------------*/
+div.logo {
+    background: url([[setting:logo]]) 0 0 no-repeat;
+    display: block;
+    float: left;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+img.small-logo {
+    float: left;
+    height: 35px;
+    margin: 0.5em;
+}
+
+@media (max-width: 767px) {
+    img.small-logo {
+        margin: 3px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar img.small-logo {
+        max-width: 150px;
+    }
+    /* Applying accesshide styles */
+    .navbar .small-logo-container + .brand {
+        position: absolute;
+        left: -10000px;
+        font-size: 1em;
+        font-weight: normal;
+    }
+}
+
+/* Header
+-------------------------*/
+
 #page-site-index h2.headingblock:before {
     background-color: #29A294;
     color: #FFFFFF;
@@ -39,14 +82,14 @@ a:hover, a:focus {
 }
 #page-header {
     position: relative;
-    top: -10px;
+    top: 10px;
 }
 #page-header h1 {
     color: #999999;
     font-size: 22px;
     text-transform: uppercase;
     float:left;
-    margin: -10px 0 5px;
+    margin: -30px 0 20px;
 }
 #page-header-date h1 {
     color: #ccc;
@@ -61,7 +104,7 @@ a:hover, a:focus {
     color:#fff;
     background-color:#f42941;
     padding:8px 35px 8px 14px;
-    margin:0 0 20px 0;
+    margin:0;
     border: 0 none;
     border-radius: 2px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.05);
@@ -85,6 +128,10 @@ a:hover, a:focus {
     content:"\f06a";
     text-shadow:none;
 }
+
+/* Navbar
+-------------------------*/
+
 .navbar-inner {
     background-color:#fff;
     background-image: none;
@@ -92,6 +139,10 @@ a:hover, a:focus {
     border-radius: 0;
     border-width: 0;
     }
+	
+.navbar .brand {
+	padding: 15px 20px 10px;
+}
 
 .navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner {
     border-width: 0;
@@ -117,6 +168,10 @@ a:hover, a:focus {
 }
 .btn-navbar .icon-bar + .icon-bar {
     margin-top: 4px;
+}
+
+.navbar .popover-region-toggle {
+    line-height: 50px;
 }
 
 .navbar .nav > li > a:hover, .navbar .nav > li > a:focus, .navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle {
@@ -285,6 +340,10 @@ ul#action-menu-0-menu {
     background-color: transparent;
     padding-left: 0;
 }
+
+/* Page Content
+-------------------------*/
+
 #courseheader {
     margin-bottom: 20px;
 }
@@ -352,35 +411,7 @@ ul#action-menu-0-menu {
     font-weight: normal;
     text-transform: uppercase;
 }
-#page-footer {
-    border: 0;
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1) inset;
-    background-color: #c3d1d2;
-    color: #7F8C8D;
-    text-shadow: 1px 1px #ECF0F1;
-}
-#page-footer  a{
-    color: #7F8C8D;
-    text-shadow: 1px 1px #ECF0F1;
-}
-#footer-left, #footer-middle {
-    font-size: 0.8em;
-    text-align: left;
-    margin:10px 20px;
-}
-#footer-right{
-    margin:10px 20px;
-}
-.footerlinks {
-    color: #7F8C8D;
-    font-size: 0.7em;
-    text-align:left;
-    text-shadow: 1px 1px #ECF0F1;
-    margin: 10px 20px;
-}
-.footerlinks a {
-    color: #7F8C8D;
-}
+
 .path-calendar .maincalendar .eventlist .event {
     background-color: #FFFFFF;
     border: 1px solid #E3E3E3;
@@ -402,7 +433,8 @@ ul#action-menu-0-menu {
             border-radius: 2px;
 }
 
-/*Lightbox*/
+/* Lightbox
+-------------------------*/
 
 .lightbox-gallery .lightbox-gallery-image-frame {
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.05);
@@ -427,7 +459,8 @@ ul#action-menu-0-menu {
     max-width: 95%;
 }
 
-/*Buttons and forms*/
+/* Buttons and forms
+-------------------------*/
 
 input, button, select, textarea {
     color: #5c5c5c;
@@ -1188,3 +1221,35 @@ outline: none;
     margin: 0.25em 0 0;
 }
 
+/* Footer
+-------------------------*/
+
+#page-footer {
+    border: 0;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1) inset;
+    background-color: #c3d1d2;
+    color: #7F8C8D;
+    text-shadow: 1px 1px #ECF0F1;
+}
+#page-footer  a{
+    color: #7F8C8D;
+    text-shadow: 1px 1px #ECF0F1;
+}
+#footer-left, #footer-middle {
+    font-size: 0.8em;
+    text-align: left;
+    margin:10px 20px;
+}
+#footer-right{
+    margin:10px 20px;
+}
+.footerlinks {
+    color: #7F8C8D;
+    font-size: 0.7em;
+    text-align:left;
+    text-shadow: 1px 1px #ECF0F1;
+    margin: 10px 20px;
+}
+.footerlinks a {
+    color: #7F8C8D;
+}

@@ -14,53 +14,27 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
-/*
- * @author    Shaun Daubney
- * @package   theme_aardvark
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+/**
+ * @package		theme_aardvark
+ * @author		Shaun Daubney
+ * @license		http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
+ 
 global $CFG;
 
-$hasheading = ($PAGE->heading);
-$hasnavbar = (empty($PAGE->layout_options['nonavbar']) && $PAGE->has_navbar());
-$hasfooter = (empty($PAGE->layout_options['nofooter']));
-$hasheader = (empty($PAGE->layout_options['noheader']));
-
-$hassidepre = (empty($PAGE->layout_options['noblocks']) && $PAGE->blocks->region_has_content('side-pre', $OUTPUT));
-$hassidepost = (empty($PAGE->layout_options['noblocks']) && $PAGE->blocks->region_has_content('side-post', $OUTPUT));
-
-$showsidepre = ($hassidepre && !$PAGE->blocks->region_completely_docked('side-pre', $OUTPUT));
-$showsidepost = ($hassidepost && !$PAGE->blocks->region_completely_docked('side-post', $OUTPUT));
-
-$isfrontpage = $PAGE->bodyid == "page-site-index";
-$iscoursepage = $PAGE->pagelayout == "course";
-
-$hasshortname = (!empty($PAGE->theme->settings->shortname));
 $hasgeneralalert = (!empty($PAGE->theme->settings->generalalert));
-
-$custommenu = $OUTPUT->custom_menu();
-$hascustommenu = (empty($PAGE->layout_options['nocustommenu']) && !empty($custommenu));
 
 ?>
 
-<header role="banner" class="navbar navbar-fixed-top">
+<header role="banner" class="navbar navbar-fixed-top<?php echo $html->navbarclass ?> moodle-has-zindex">
     <nav role="navigation" class="navbar-inner">
-        <div class="container-fluid" >
-		
-		<a class="brand" href="<?php echo $CFG->wwwroot;?>"><?php
-        if ($hasshortname) {
-            echo '<span class="shortname">' . format_string($SITE->shortname, true, array('context' => context_course::instance(SITEID))). '</span>';
-        } ?></a>
-		
-            <a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-			    <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </a>
-			
+        <div class="container-fluid">
+            <?php echo $OUTPUT->navbar_home(); ?>
+            <?php echo $OUTPUT->navbar_button(); ?>
             <?php echo $OUTPUT->user_menu(); ?>
-			<?php echo $OUTPUT->search_box(); ?>
-            <div class="nav-collapse collapse navbar-responsive-collapse">
+            <?php echo $OUTPUT->navbar_plugin_output(); ?>
+            <?php echo $OUTPUT->search_box(); ?>
+            <div class="nav-collapse collapse">
                 <?php echo $OUTPUT->custom_menu(); ?>
                 <ul class="nav pull-right">
                     <li><?php echo $OUTPUT->page_heading_menu(); ?></li>
@@ -68,24 +42,14 @@ $hascustommenu = (empty($PAGE->layout_options['nocustommenu']) && !empty($custom
             </div>
         </div>
     </nav>
- 
-	</header>
+</header>
 
 <div class="container-fluid clearfix"><?php
 
-if ($hasnavbar) { ?>
-    <nav class="breadcrumb-button"><?php echo $PAGE->button; ?></nav><?php
-    echo $OUTPUT->navbar();
-}
-
-if ($iscoursepage) { ?>
-    <h1 id="courseheader"><?php echo $PAGE->heading ?></h1><?php
-}
-if (($isfrontpage) && ($hasgeneralalert)) { ?>
+if ($hasgeneralalert) { ?>
     <div id="page-header-generalalert"><?php
         echo $PAGE->theme->settings->generalalert; ?>
     </div><?php
 } ?>
 
 </div>
-<div id="page" class="container-fluid clearfix">

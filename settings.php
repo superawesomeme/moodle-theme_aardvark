@@ -1,23 +1,9 @@
 <?php
-// This file is part of Moodle - http://moodle.org/
-//
-// Moodle is free software: you can redistribute it and/or modify
-// it under the terms of the GNU General Public License as published by
-// the Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-//
-// Moodle is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
-//
-// You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
-/*
- * @author    Shaun Daubney
- * @package   theme_aardvark
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+/**
+ * @package		theme_aardvark
+ * @author		Shaun Daubney
+ * @license		http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die;
@@ -31,15 +17,7 @@ if ($ADMIN->fulltree) {
     $setting = new admin_setting_heading($name, $heading, $information);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $settings->add($setting);
-
-    // Brand logo setting...
-    $name = 'theme_aardvark/brandlogo';
-    $title = get_string('brandlogo', 'theme_aardvark');
-    $description = get_string('brandlogodesc', 'theme_aardvark');
-    $setting = new admin_setting_configstoredfile($name, $title, $description, 'brandlogo');
-    $setting->set_updatedcallback('theme_reset_all_caches');
-    $settings->add($setting);
-
+	
     // Main colour setting.
     $name = 'theme_aardvark/maincolor';
     $title = get_string('maincolor','theme_aardvark');
@@ -49,18 +27,16 @@ if ($ADMIN->fulltree) {
     $setting = new admin_setting_configcolourpicker($name, $title, $description, $default, $previewconfig);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $settings->add($setting);
-
-    // Short Name setting.
-    $name = 'theme_aardvark/shortname';
-    $title = get_string('shortname','theme_aardvark');
-    $description = get_string('shortnamedesc', 'theme_aardvark');
-    $default = 1;
-    $choices = array(1=>get_string('yes',''), 0=>get_string('no',''));
-    $setting = new admin_setting_configselect($name, $title, $description, $default, $choices);
+	
+    // Show site name along with small logo.
+    $name = 'theme_aardvark/sitename';
+    $title = get_string('sitename', 'theme_aardvark');
+    $description = get_string('sitenamedesc', 'theme_aardvark');
+    $setting = new admin_setting_configcheckbox($name, $title, $description, 0);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $settings->add($setting);
-
-    // General Alert setting.
+	
+	// General Alert setting.
     $name = 'theme_aardvark/generalalert';
     $title = get_string('generalalert','theme_aardvark');
     $description = get_string('generalalertdesc', 'theme_aardvark');
@@ -71,14 +47,14 @@ if ($ADMIN->fulltree) {
 
     // Custom CSS file.
     $name = 'theme_aardvark/customcss';
-    $title = get_string('customcss','theme_aardvark');
+    $title = get_string('customcss', 'theme_aardvark');
     $description = get_string('customcssdesc', 'theme_aardvark');
     $default = '';
     $setting = new admin_setting_configtextarea($name, $title, $description, $default);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $settings->add($setting);
-
-    // Footer Options Heading.
+	
+	    // Footer Options Heading.
     $name = 'theme_aardvark/footeroptheading';
     $heading = get_string('footeroptheading', 'theme_aardvark');
     $information = get_string('footeroptdesc', 'theme_aardvark');
@@ -94,6 +70,15 @@ if ($ADMIN->fulltree) {
     $setting = new admin_setting_configtext($name, $title, $description, $default);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $settings->add($setting);
+	
+	// Copyrightlink setting.
+    $name = 'theme_aardvark/copyrightlink';
+    $title = get_string('copyrightlink','theme_aardvark');
+    $description = get_string('copyrightlinkdesc', 'theme_aardvark');
+    $default = '';
+    $setting = new admin_setting_configtext($name, $title, $description, $default);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $settings->add($setting);
 
     // CEOP.
     $name = 'theme_aardvark/ceop';
@@ -105,6 +90,15 @@ if ($ADMIN->fulltree) {
     $setting->set_updatedcallback('theme_reset_all_caches');
     $settings->add($setting);
 
+	// Custom footer setting.
+    $name = 'theme_aardvark/customfooter';
+    $title = get_string('customfooter','theme_aardvark');
+    $description = get_string('customfooterdesc', 'theme_aardvark');
+    $default = '';
+    $setting = new admin_setting_confightmleditor($name, $title, $description, $default);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $settings->add($setting);
+	
     // Disclaimer setting.
     $name = 'theme_aardvark/disclaimer';
     $title = get_string('disclaimer','theme_aardvark');

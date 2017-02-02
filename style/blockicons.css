@@ -1,7 +1,7 @@
-/*
- * @author    Shaun Daubney
- * @package   theme_aardvark
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+/**
+ * @package		theme_aardvark
+ * @author		Shaun Daubney
+ * @license		http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 .block .header .title h2:before {
@@ -350,7 +350,7 @@
     color: #ff3096;
 }
 .footer-icon.instagram:hover, .footer-icon.instagram:focus {
-    color: #b99c6b;
+    color: #e62163;
 }
 .footer-icon.youtube:hover, .footer-icon.youtube:focus {
     color: #f42941;

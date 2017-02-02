@@ -1,32 +1,16 @@
 <?php
-// This file is part of Moodle - http://moodle.org/
-//
-// Moodle is free software: you can redistribute it and/or modify
-// it under the terms of the GNU General Public License as published by
-// the Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-//
-// Moodle is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
-//
-// You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Theme version info
- *
- * @package    theme_aardvark
- * @copyright  Shaun Daubney
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package		theme_aardvark
+ * @author		Shaun Daubney
+ * @license		http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die;
 
-$plugin->component = 'theme_aardvark'; // Full name of the plugin (used for diagnostics)
-$plugin->dependencies = array('theme_bootstrapbase'  => 2015111600,);
+$plugin->version   = 2017020203;
+$plugin->requires  = 2016112900;
+$plugin->component = 'theme_aardvark';
+$plugin->dependencies = array('theme_bootstrapbase'  => 2016112900,);
 $plugin->maturity  = MATURITY_STABLE;
-$plugin->release   = '3.1';
-$plugin->requires  = 2016052300; // Requires this Moodle version
-$plugin->version   = 2016081900; // The current module version (Date: YYYYMMDDXX)
+$plugin->release   = '3.2';

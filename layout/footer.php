@@ -14,14 +14,16 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
-/*
- * @author    Shaun Daubney
- * @package   theme_aardvark
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+/**
+ * @package		theme_aardvark
+ * @author		Shaun Daubney
+ * @license		http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 $hascopyright = (empty($PAGE->theme->settings->copyright)) ? false : $PAGE->theme->settings->copyright;
+$hascopyrightlink = (!empty($PAGE->theme->settings->copyrightlink));
 $hasceop = (!empty($PAGE->theme->settings->ceop));
+$hascustomfooter = (!empty($PAGE->theme->settings->customfooter));
 $hasdisclaimer = (!empty($PAGE->theme->settings->disclaimer));
 $haswebsite = (!empty($PAGE->theme->settings->website));
 $hasfacebook = (!empty($PAGE->theme->settings->facebook));
@@ -37,19 +39,19 @@ $haslinkedin = (!empty($PAGE->theme->settings->linkedin));
 $hasyoutube = (!empty($PAGE->theme->settings->youtube));
 $haswikipedia = (!empty($PAGE->theme->settings->wikipedia));
 ?>
+<footer id="page-footer">
 	<div class="row-fluid">
     	<!-- Widget 1 -->
     	<div class="span4">
     		<div id="footer-left" class="block-region">
     			<div class="region-content">
-       			 <?php if ($hascopyright) {
-        echo '&copy; '.date("Y").' '.$hascopyright.'';
-    } 
+       			 <?php 
 	
             echo $OUTPUT->login_info();			
 			echo $OUTPUT->standard_footer_html();
 			?><p class="helplink"><?php echo page_doc_link(get_string('moodledocslink')); ?></p><?php
-            if ($hasceop) {?><a href="<?php echo $PAGE->theme->settings->ceop;?> "><img src="<?php echo $OUTPUT->pix_url('ceopreport', 'theme')?>" /></a><?php }?>
+            if ($hasceop) {?><p><a href="<?php echo $PAGE->theme->settings->ceop;?> "><img src="<?php echo $OUTPUT->pix_url('ceopreport', 'theme')?>" /></a></p><?php }?>
+			<?php if ($hascustomfooter) {echo $PAGE->theme->settings->customfooter;} else {}?>
         		</div>
         	</div>
     	</div>
@@ -108,7 +110,16 @@ $haswikipedia = (!empty($PAGE->theme->settings->wikipedia));
 	<div class="footerlinks">
 	<p>
 	
-	<?php  
+	
+	<?php if ($hascopyright) {
+	echo html_writer::link($PAGE->theme->settings->copyrightlink, '&copy; '.date("Y").' '.$hascopyright.'');
+	echo ' | ';
+	}
+	else {}
+	?>
+
+<?php
+	
  echo html_writer::link('http://moodle.org/plugins/view.php?plugin=theme_aardvark', get_string('credit', 'theme_aardvark'));
  echo ' | ';
  echo html_writer::link('http://moodle.org', 'moodle.org');?> 
@@ -116,3 +127,4 @@ $haswikipedia = (!empty($PAGE->theme->settings->wikipedia));
     	
     
 	</div>
+</footer>

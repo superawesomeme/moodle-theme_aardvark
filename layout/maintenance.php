@@ -15,14 +15,13 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * This layout file is designed maintenance related tasks such as upgrade and installation of plugins.
- *
- * It's ultra important that this layout file makes no use of API's unless it absolutely needs to.
- * Under no circumstances should it use API calls that result in database or cache interaction.
- *
- * If you are modifying this file please be extremely careful, one wrong API call and you could end up
- * breaking installation or upgrade unwittingly.
+ * @package		theme_aardvark
+ * @author		Shaun Daubney
+ * @license		http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
+
+// Get the HTML for the settings bits.
+$html = theme_aardvark_get_html_for_settings($OUTPUT, $PAGE);
 
 echo $OUTPUT->doctype() ?>
 <html <?php echo $OUTPUT->htmlattributes(); ?>>
@@ -40,7 +39,7 @@ echo $OUTPUT->doctype() ?>
 <div id="page" class="container-fluid">
 
     <header id="page-header" class="clearfix">
-        <?php echo $OUTPUT->page_heading(); ?>
+        <?php echo $html->heading; ?>
     </header>
 
     <div id="page-content" class="row-fluid">

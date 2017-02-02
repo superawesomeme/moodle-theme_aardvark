@@ -26,6 +26,17 @@
  *  Twitter: http://twitter.com/newburycollege
  *  Website: http://vle.newbury-college.ac.uk
  */
+ 
+ v3.2 
+ -	(2017020203) Code tidyup to closer align with Clean theme
+ -	(2017020203) Intergration of core 'Logo' settings - see https://docs.moodle.org/32/en/Logos
+ -	(2017020203) Intergration of core 'Notifications' and 'Messages' in navbar (Moodle 3.2+)
+ -	(2017020203) Fixed page layout issues in gradebook
+ -	(2017020203) Enabled docking by default - It's not pretty, but it means you can use it if you want.
+ -  (2016120900) Added new custom HTML area in footer
+ -  (2016120900) Moved copyright notice to bottom of footer to make way for new custom area
+ -  (2016120900) Copyright now links to main organisation site
+ -  (2016129000) Instagram logo changed to pink
 
  v3.1
  -	(2016081900) Fixed mobile/responsive menu issue (hamburger)

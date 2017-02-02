@@ -1,7 +1,7 @@
-/*
- * @author    Shaun Daubney
- * @package   theme_aardvark
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+/**
+ * @package		theme_aardvark
+ * @author		Shaun Daubney
+ * @license		http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 /* Colour setting
@@ -26,21 +26,6 @@ a:hover, a:focus {
 
 /* Nav Bar CSS Settings
 -------------------------*/
-
-.navbar .brand {
-    background-image: url([[setting:brandlogo]]);
-    background-position: left center;
-    background-repeat: no-repeat;
-    padding: 0.7em;
-	font-weight: normal;
-    text-shadow: none;
-    margin: 0;
-	min-width: 1em;
-	height:1em;
-}
-.navbar .shortname {
-    margin-left: 2em;
-}
 
 .navbar .btn-navbar .icon-bar {
     background-color: [[setting:maincolor]];
@@ -95,9 +80,6 @@ td.submit input {
 }
 
 
-
-
-/* No CSS markup below this point.
----------------------------------*/
-
+/* Custom CSS Settings
+-------------------------*/
 [[setting:customcss]]
