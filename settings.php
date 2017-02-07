@@ -85,7 +85,7 @@ if ($ADMIN->fulltree) {
     $title = get_string('ceop','theme_aardvark');
     $description = get_string('ceopdesc', 'theme_aardvark');
     $default = '';
-    $choices = array(''=>get_string('ceopnone','theme_aardvark'), 'http://www.thinkuknow.org.au/site/report.asp'=>get_string('ceopaus','theme_aardvark'), 'http://www.ceop.police.uk/report-abuse/'=>get_string('ceopuk','theme_aardvark'));
+    $choices = array(''=>get_string('ceopnone','theme_aardvark'), 'https://www.thinkuknow.org.au/site/how-report'=>get_string('ceopaus','theme_aardvark'), 'http://www.ceop.police.uk/report-abuse/'=>get_string('ceopuk','theme_aardvark'));
     $setting = new admin_setting_configselect($name, $title, $description, $default, $choices);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $settings->add($setting);
