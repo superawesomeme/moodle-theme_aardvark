@@ -1,9 +1,9 @@
 <?php
 
 /**
- * @package		theme_aardvark
- * @author		Shaun Daubney
- * @license		http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package    theme_aardvark
+ * @author     Shaun Daubney
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 // Get the HTML for the settings bits.
@@ -47,7 +47,7 @@ echo $OUTPUT->doctype() ?>
 
 </div>
 
-	<?php require('footer.php'); ?>
+<?php require('footer.php'); ?>
 
 </body>
 </html>

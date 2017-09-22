@@ -27,31 +27,36 @@
  *  Website: http://vle.newbury-college.ac.uk
  */
  
+ v3.3
+ - (2017081001) Tidied up some untidy code
+ - (2017081001) Tested with 3.3.1+
+ - (2017020700) Updated CEOP website URLs
+ 
  v3.2 
- -	(2017020203) Code tidyup to closer align with Clean theme
- -	(2017020203) Intergration of core 'Logo' settings - see https://docs.moodle.org/32/en/Logos
- -	(2017020203) Intergration of core 'Notifications' and 'Messages' in navbar (Moodle 3.2+)
- -	(2017020203) Fixed page layout issues in gradebook
- -	(2017020203) Enabled docking by default - It's not pretty, but it means you can use it if you want.
- -  (2016120900) Added new custom HTML area in footer
- -  (2016120900) Moved copyright notice to bottom of footer to make way for new custom area
- -  (2016120900) Copyright now links to main organisation site
- -  (2016129000) Instagram logo changed to pink
+ - (2017020203) Code tidyup to closer align with Clean theme
+ - (2017020203) Intergration of core 'Logo' settings - see https://docs.moodle.org/32/en/Logos
+ - (2017020203) Intergration of core 'Notifications' and 'Messages' in navbar (Moodle 3.2+)
+ - (2017020203) Fixed page layout issues in gradebook
+ - (2017020203) Enabled docking by default - It's not pretty, but it means you can use it if you want.
+ - (2016120900) Added new custom HTML area in footer
+ - (2016120900) Moved copyright notice to bottom of footer to make way for new custom area
+ - (2016120900) Copyright now links to main organisation site
+ - (2016129000) Instagram logo changed to pink
 
  v3.1
- -	(2016081900) Fixed mobile/responsive menu issue (hamburger)
- -  (2016081800) Fixed Undefined variable: html in aardvark/layout/header.php
- -  (2016081800) Fixed alignment of logo in header
- -  (2016080500) Integrated global search function
- -  (2016080500) Added new range of small 'M' logos in pix/logos
- -  (2016080500) Added Snapchat option in footer
- -  (2016080500) Replaced Wikipedia svg with Fontawesome icon in footer
- -  (2016080500) Removed z-index for Assignment PDF editor from aardvark.css 
- -  (2016080500) Updated Fontawesome to 4.6.3
- -  (2016080500) Updated aardvark/lib.php
- -  (2016080500) Updated aardvark/settings.php
- -  (2016080500) Updated aardvark/version.php
- -  (2016080500) Created new branch - AARDVARK_31_STABLE
+ - (2016081900) Fixed mobile/responsive menu issue (hamburger)
+ - (2016081800) Fixed Undefined variable: html in aardvark/layout/header.php
+ - (2016081800) Fixed alignment of logo in header
+ - (2016080500) Integrated global search function
+ - (2016080500) Added new range of small 'M' logos in pix/logos
+ - (2016080500) Added Snapchat option in footer
+ - (2016080500) Replaced Wikipedia svg with Fontawesome icon in footer
+ - (2016080500) Removed z-index for Assignment PDF editor from aardvark.css 
+ - (2016080500) Updated Fontawesome to 4.6.3
+ - (2016080500) Updated aardvark/lib.php
+ - (2016080500) Updated aardvark/settings.php
+ - (2016080500) Updated aardvark/version.php
+ - (2016080500) Created new branch - AARDVARK_31_STABLE
  
  v3.0 (Unpublished - used as base for 3.1 - thanks to Mary Evans)
  -  Depreciated Logo URL.

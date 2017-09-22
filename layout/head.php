@@ -1,11 +1,9 @@
 <?php
-
 /**
  * @package		theme_aardvark
  * @author		Shaun Daubney
  * @license		http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
- 
 ?>
 <head>
     <title><?php echo $PAGE->title ?></title>
