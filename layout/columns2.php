@@ -1,9 +1,19 @@
 <?php
-
 /**
- * @package		theme_aardvark
- * @author		Shaun Daubney
- * @license		http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * Aardvark theme for Moodle - Material-inspired theme based on bootstrap.
+ *
+ * DO NOT MODIFY THIS THEME!
+ * COPY IT FIRST, THEN RENAME THE COPY AND MODIFY IT INSTEAD.
+ *
+ * For full information about creating Moodle themes, see:
+ * http://docs.moodle.org/dev/Themes_2.0
+ *
+ * The two column layout.
+ *
+ * @package   theme_aardvark
+ * @author    Shaun Daubney
+ * @copyright 2017 Newbury College
+ * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 // Get the HTML for the settings bits.
@@ -14,7 +24,6 @@ $sidepre = 'span3 desktop-first-column';
 
 echo $OUTPUT->doctype() ?>
 <html <?php echo $OUTPUT->htmlattributes(); ?>>
-
 <?php require('head.php'); ?>
 
 <body <?php echo $OUTPUT->body_attributes('two-column'); ?>>
@@ -37,11 +46,10 @@ echo $OUTPUT->doctype() ?>
         ?>
     </div>
 
+    <?php require('footer.php'); ?>
+
     <?php echo $OUTPUT->standard_end_of_body_html() ?>
 
 </div>
-
-	<?php require('footer.php'); ?>
-	
 </body>
 </html>

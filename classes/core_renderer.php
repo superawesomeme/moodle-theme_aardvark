@@ -1,13 +1,20 @@
 <?php
-
-require_once($CFG->dirroot . '/theme/bootstrapbase/renderers.php');
-
 /**
- * @package		theme_aardvark
- * @author		Shaun Daubney
- * @license		http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * Aardvark theme for Moodle - Material-inspired theme based on bootstrap.
+ *
+ * DO NOT MODIFY THIS THEME!
+ * COPY IT FIRST, THEN RENAME THE COPY AND MODIFY IT INSTEAD.
+ *
+ * For full information about creating Moodle themes, see:
+ * http://docs.moodle.org/dev/Themes_2.0
+ *
+ * @package   theme_aardvark
+ * @author    Shaun Daubney
+ * @copyright 2017 Newbury College
+ * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+require_once($CFG->dirroot . '/theme/bootstrapbase/renderers.php');
 class theme_aardvark_core_renderer extends theme_bootstrapbase_core_renderer {
 
     /**
@@ -42,8 +49,6 @@ class theme_aardvark_core_renderer extends theme_bootstrapbase_core_renderer {
         // Only render the logo if we're on the front page or login page
         // and the theme has a logo.
         $logo = $this->get_logo_url();
-        
-
         return false;
     }
 
@@ -111,8 +116,14 @@ class theme_aardvark_core_renderer extends theme_bootstrapbase_core_renderer {
      * @return moodle_url|false
      */
     public function get_logo_url($maxwidth = null, $maxheight = 100) {
+        global $CFG;
+
         if (!empty($this->page->theme->settings->logo)) {
-            return $this->page->theme->setting_file_url('logo', 'logo');
+            $url = $this->page->theme->setting_file_url('logo', 'logo');
+            // Get a URL suitable for moodle_url.
+            $relativebaseurl = preg_replace('|^https?://|i', '//', $CFG->wwwroot);
+            $url = str_replace($relativebaseurl, '', $url);
+            return new moodle_url($url);
         }
         return parent::get_logo_url($maxwidth, $maxheight);
     }
@@ -127,8 +138,14 @@ class theme_aardvark_core_renderer extends theme_bootstrapbase_core_renderer {
      * @return moodle_url|false
      */
     public function get_compact_logo_url($maxwidth = 100, $maxheight = 100) {
+        global $CFG;
+
         if (!empty($this->page->theme->settings->smalllogo)) {
-            return $this->page->theme->setting_file_url('smalllogo', 'smalllogo');
+            $url = $this->page->theme->setting_file_url('smalllogo', 'smalllogo');
+            // Get a URL suitable for moodle_url.
+            $relativebaseurl = preg_replace('|^https?://|i', '//', $CFG->wwwroot);
+            $url = str_replace($relativebaseurl, '', $url);
+            return new moodle_url($url);
         }
         return parent::get_compact_logo_url($maxwidth, $maxheight);
     }

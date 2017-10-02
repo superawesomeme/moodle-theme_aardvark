@@ -1,9 +1,17 @@
 <?php
-
 /**
- * @package		theme_aardvark
- * @author		Shaun Daubney
- * @license		http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * Aardvark theme for Moodle - Material-inspired theme based on bootstrap.
+ *
+ * DO NOT MODIFY THIS THEME!
+ * COPY IT FIRST, THEN RENAME THE COPY AND MODIFY IT INSTEAD.
+ *
+ * For full information about creating Moodle themes, see:
+ * http://docs.moodle.org/dev/Themes_2.0
+ *
+ * @package   theme_aardvark
+ * @author    Shaun Daubney
+ * @copyright 2017 Newbury College
+ * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 /**
@@ -15,17 +23,15 @@
  * @param theme_config $theme The theme config object.
  * @return string The parsed CSS The parsed CSS.
  */
-function theme_aardvark_process_css($css, $theme) {
+function theme_aardvark_process_css($css, $theme)
+{
     global $OUTPUT;
-
     // Set the background image for the logo.
-    $logo = $OUTPUT->get_logo_url(null, 75);
-    $css = theme_aardvark_set_logo($css, $logo);
-	
-	// Set the main colour.
+    $logo      = $OUTPUT->get_logo_url(null, 75);
+    $css       = theme_aardvark_set_logo($css, $logo);
+    // Set the main colour.
     $maincolor = $theme->settings->maincolor;
-    $css = theme_aardvark_set_maincolor($css, $maincolor);
-
+    $css       = theme_aardvark_set_maincolor($css, $maincolor);
     // Set custom CSS.
     if (!empty($theme->settings->customcss)) {
         $customcss = $theme->settings->customcss;
@@ -33,10 +39,8 @@ function theme_aardvark_process_css($css, $theme) {
         $customcss = null;
     }
     $css = theme_aardvark_set_customcss($css, $customcss);
-
     return $css;
 }
-
 /**
  * Adds the logo to CSS.
  *
@@ -44,18 +48,16 @@ function theme_aardvark_process_css($css, $theme) {
  * @param string $logo The URL of the logo.
  * @return string The parsed CSS
  */
-function theme_aardvark_set_logo($css, $logo) {
-    $tag = '[[setting:logo]]';
+function theme_aardvark_set_logo($css, $logo)
+{
+    $tag         = '[[setting:logo]]';
     $replacement = $logo;
     if (is_null($replacement)) {
         $replacement = '';
     }
-
     $css = str_replace($tag, $replacement, $css);
-
     return $css;
 }
-
 /**
  * Adds the main colour to CSS.
  *
@@ -63,18 +65,16 @@ function theme_aardvark_set_logo($css, $logo) {
  * @param string $maincolor The URL of the logo.
  * @return string The parsed CSS
  */
-
-function theme_aardvark_set_maincolor($css, $maincolor) {
-    $tag = '[[setting:maincolor]]';
+function theme_aardvark_set_maincolor($css, $maincolor)
+{
+    $tag         = '[[setting:maincolor]]';
     $replacement = $maincolor;
     if (is_null($replacement)) {
         $replacement = '#f98012';
     }
     $css = str_replace($tag, $replacement, $css);
-
     return $css;
 }
-
 /**
  * Serves any files associated with the theme settings.
  *
@@ -87,7 +87,8 @@ function theme_aardvark_set_maincolor($css, $maincolor) {
  * @param array $options
  * @return bool
  */
-function theme_aardvark_pluginfile($course, $cm, $context, $filearea, $args, $forcedownload, array $options = array()) {
+function theme_aardvark_pluginfile($course, $cm, $context, $filearea, $args, $forcedownload, array $options = array())
+{
     if ($context->contextlevel == CONTEXT_SYSTEM and ($filearea === 'logo' || $filearea === 'smalllogo')) {
         $theme = theme_config::load('aardvark');
         // By default, theme files must be cache-able by both browsers and proxies.
@@ -99,7 +100,6 @@ function theme_aardvark_pluginfile($course, $cm, $context, $filearea, $args, $fo
         send_file_not_found();
     }
 }
-
 /**
  * Adds any custom CSS to the CSS before it is cached.
  *
@@ -107,18 +107,16 @@ function theme_aardvark_pluginfile($course, $cm, $context, $filearea, $args, $fo
  * @param string $customcss The custom CSS to add.
  * @return string The CSS which now contains our custom CSS.
  */
-function theme_aardvark_set_customcss($css, $customcss) {
-    $tag = '[[setting:customcss]]';
+function theme_aardvark_set_customcss($css, $customcss)
+{
+    $tag         = '[[setting:customcss]]';
     $replacement = $customcss;
     if (is_null($replacement)) {
         $replacement = '';
     }
-
     $css = str_replace($tag, $replacement, $css);
-
     return $css;
 }
-
 /**
  * Returns an object containing HTML for the areas affected by settings.
  *
@@ -131,15 +129,11 @@ function theme_aardvark_set_customcss($css, $customcss) {
  *      - navbarclass A CSS class to use on the navbar. By default ''.
  *      - heading HTML to use for the heading. A logo if one is selected or the default heading.
  */
-function theme_aardvark_get_html_for_settings(renderer_base $output, moodle_page $page) {
+function theme_aardvark_get_html_for_settings(renderer_base $output, moodle_page $page)
+{
     global $CFG;
-    $return = new stdClass;
-
+    $return              = new stdClass;
     $return->navbarclass = '';
-	
-    $return->heading = $output->page_heading();
-
+    $return->heading     = $output->page_heading();
     return $return;
 }
-
-
