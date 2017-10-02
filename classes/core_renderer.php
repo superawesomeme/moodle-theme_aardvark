@@ -1,4 +1,4 @@
- <?php
+<?php
 require_once($CFG->dirroot . '/theme/bootstrapbase/renderers.php');
 /**
  * @packagetheme_aardvark
